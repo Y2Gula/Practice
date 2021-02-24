@@ -332,5 +332,33 @@ __언더바 두개__
 ![Alt text](/path/to/img.jpg)
 ![Alt text](/path/to/img.jpg "Optional Title")
 ```
+![Alt text](https://user-images.githubusercontent.com/78400598/108971682-e8205500-76c5-11eb-845c-46779d27f1e4.jpg)
+![Alt text](https://user-images.githubusercontent.com/78400598/108971682-e8205500-76c5-11eb-845c-46779d27f1e4.jpg "합성사진_천국")
 
+사이즈 조절 기능은 없기 때문에 ``` <img width="" height=""></img> ``` 를 이용한다.
 
+예
+```
+<img src="https://user-images.githubusercontent.com/78400598/108971682-e8205500-76c5-11eb-845c-46779d27f1e4.jpg" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="heaven"></img><br/>
+<img src="https://user-images.githubusercontent.com/78400598/108971682-e8205500-76c5-11eb-845c-46779d27f1e4.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="heaven"></img><br/>
+```
+
+<img src="https://user-images.githubusercontent.com/78400598/108971682-e8205500-76c5-11eb-845c-46779d27f1e4.jpg" width="450px" height="300px" title="10px" alt="heaven"></img><br/>
+<img src="https://user-images.githubusercontent.com/78400598/108971682-e8205500-76c5-11eb-845c-46779d27f1e4.jpg" width="40%" height="30%" title="10px" alt="heaven"></img><br/>
+
+## 2.9. 줄바꿈
+
+3칸 이상 띄어쓰기(``` ```)를 하면 줄이 바뀐다
+```
+* 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다.
+이렇게
+
+* 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다.   
+이렇게
+```
+
+* 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다.
+이렇게
+
+* 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다.   
+이렇게
