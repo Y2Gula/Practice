@@ -282,13 +282,15 @@ Link : [Google][googlelink]
 [googlelink] : https://google.com "Go Google"
 ```
 Link : [Google][googlelink]
-[googlelink] : (https://google.com "Go google")
+
+[googlelink] : https://google.com "Go google"
+
 * 외부링크
 ```
 사용문법 : [Title](link)
 적용예 : [Google](https://google.com, "google link")
 ```
-[Google](https://google.com, "google link")
+Link : [Google](https://google.com, "google link")
 * 자동연결
 ```
 일반적인 URL 혹은 이메일주소인 경우 적절한 형식으로 링크를 형성한다.
