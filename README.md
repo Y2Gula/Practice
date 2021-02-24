@@ -167,22 +167,169 @@ end code block.
 ---------------------------------------
 This is a normal paragraph :
 
-  This is a code block.
+    This is a code block.
   
 end code block.
 
 ---------------------------------------
 
-
+> 한 줄 띄어쓰지 않으면 인식이 제대로 안되는 문제가 발생한다
+```
 This is a normal paragraph :
-  This 
+  This is a code block.
+end code block.
+```
+적용 예 :
 
+---------------------------------------
+This is a normal paragraph:
+  This is a code block.
+end code block.
+
+---------------------------------------
+
+### 2.4.2 코드블럭
+코드블럭은 다음과 같이 2가지 방식을 사용할 수 있다:
+* ``` <pre><code>{code}</code></pre> ``` 이용방식
+```
 <pre>
 <code>
-public class BootspringBootApplication {
-  public static void main(String[] args) {
-    System.out.println("Hello, Honeyman");
+public class BootSpringBootApplication{
+  public static void main(String[] arrgs) {
+    System.out.println("Hello, Honeymon");
   }
 }
 </code>
 </pre>
+```
+<pre>
+<code>
+public class BootSpringBootApplication {
+  public static void main(String[] args) {
+    System.out.println("Hello, Honeymon");
+  }
+}
+</pre>
+</code>
+
+* 코드블럭코드 (\```) 이용하는 방법
+
+<pre>
+<code>
+```
+public class BootSpringBootApplication {
+  public staticvoid main(String[] args) {
+    System.out.println("Hello, Honeymon");
+  }
+}
+```
+</code>
+</pre>
+
+```
+public class BootSpringBootApplication {
+  public staticvoid main(String[] args) {
+    System.out.println("Hello, Honeymon");
+  }
+}
+```
+
+*깃헙*에서는 코드블럭코드(\```) 시작점에 사용하는 언어를 선언하여 [문법강조(Syntax highlighting)](https://docs.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks#syntax-highlighting)가 가능하다
+
+<pre>
+<code>
+```java
+public class BootSpringBootApplication {
+  public static void main(String[] args) {
+    System.out.println("Hello, Honeymon");
+  }
+}
+```
+</code>
+</pre>
+```java
+public class BootSpringBootApplication {
+  public static void main(String[] args) {
+    System.out.println("Hello, Honeymon");
+  }
+}
+```
+## 2.5. 수평선 ```<hr/> ``` 
+
+아래 줄은 모두 수평선을 만든다. 마크다운 문서를 미리보기로 출력할 때 **페이지 나누기** 용도로 많이 사용한다.
+```
+* * *
+***
+*****
+- - -
+----------------------------
+```
+* 적용예
+* * *
+***
+*****
+- - -
+--------------------------------
+## 2.6 링크
+
+* 참조링크
+```
+[link keyword][id]
+[id]: URL "Optional Title here"
+
+// code
+Link : [Google][googlelink]
+[googlelink] : https://google.com "Go Google"
+```
+Link : [Google][googlelink]
+[googlelink] : (https://google.com "Go google")
+* 외부링크
+```
+사용문법 : [Title](link)
+적용예 : [Google](https://google.com, "google link")
+```
+[Google](https://google.com, "google link")
+* 자동연결
+```
+일반적인 URL 혹은 이메일주소인 경우 적절한 형식으로 링크를 형성한다.
+* 외부링크 : <http://example.com/>
+* 이메일링크 : <address@example.com>
+```
+* 외부링크 : <http://example.com/>
+* 이메일링크 : <address@example.com>
+## 2.7 강조
+
+```
+*single asterisks*
+*별표 하나*
+_single underscores_
+_언더바 하나_
+**double asterisks**
+**별표 두개**
+__double underscores__
+__언더바 두개__
+~~cancelline~~
+~~취소선~~
+```
+* *single asterisks*
+* *별표 하나*
+* _single underscores_
+* _언더바 하나_
+* **double asterisks**
+* **별표 두개**
+* __double underscores__
+* __언더바 두개__
+* ~~cancelline~~
+* ~~취소선~~
+
+> ``` 문장 중간에 사용할 경우에는 ** 별표 두개 ** 를 사용하는 것이 좋다 ``` <br>
+> 문장 중간에 사용할 경우에는 **별표 두개** 를 사용하는 것이 좋다
+
+## 2.8. 이미지
+
+```
+![Alt text](/path/to/img.jpg)
+![Alt text](/path/to/img.jpg "Optional Title")
+```
+
+
